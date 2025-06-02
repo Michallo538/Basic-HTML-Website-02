@@ -9,16 +9,18 @@
     <meta name="keywords" content="HTML, Portfolio, Projects, Articles">
     <meta name="author" content="Your Name">
     <link favicon="https://via.placeholder.com/32" href="https://via.placeholder.com/32">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <nav>
-        <div>
-            <div>
+    <div class="grid-container">
+        <nav>
+            <div class="logo">
                 <img src="https://via.placeholder.com/150" alt="Logo" />
                 <h4>My Website</h4>
             </div>
-            <div>
+            <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -26,34 +28,38 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <header>
-        <h1>Frontend Developer</h1>
-        <p>html only with proper layout, no styling</p>
-    </header>
-    <main>
-        <section>
-            <h3>Projects</h3>
-            <a href="#">HTML Only Portfolio</a><br>
-            <a href="#">Calculator</a><br>
-            <a href="#">Quiz</a><br>
-            <a href="#">Countdown Timer</a><br>
-            <a href="/projects.html">Product Upcoming Page</a>
-        </section>
-        <section>
-            <div>
+        </nav>
+        <header>
+            <h1>Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </header>
+        <main>
+            <section class="projects">
+                <h3>Projects</h3>
+                <div class="projects-list">
+                    <a href="#">HTML Only Portfolio</a><br>
+                    <hr>
+                    <a href="#">Calculator</a><br>
+                    <hr>
+                    <a href="#">Quiz</a><br>
+                    <hr>
+                    <a href="#">Countdown Timer</a><br>
+                    <hr>
+                    <a href="/projects.html">Product Upcoming Page</a>
+                </div>
+            </section>
+            <section class="workexperience">
                 <h5>Work Epxerience</h5>
                 <h6>roadmap.sh</h6>
                 <p>Solved all the frontend projects</p>
                 <a href="https://roadmap.sh/u/michalmazur">Visit my profile</a>
-            </div>
-            <div>
+            </section>
+            <section class="opensource">
                 <h5>Open source work</h5>
                 <p>Contributed to 50 opensource projects. Made my own projects wit 200 Github Stars.</p>
                 <a href="https://github.com">Visit my Github Profile</a>
-            </div>
-            <div>
+            </section>
+            <section class="education">
                 <h5>Education</h5>
                 <p>Graduated with 3.76 out of 4 CGPA. Won aAcme Hackathon Organised in 30 sessions.</p>
                 <p>Courses I took:</p>
@@ -67,26 +73,33 @@
                     <li>Operating Systems</li>
                     <li>Software Engineering</li>
                 </ul>
-            </div>
-        </section>
-        <section>
-            <h3>Reviews from my Teachers</h3>
-            <div>
-                <h5>John Doe</h5>
-                <p>He is a great student. He solved all the frontend projects.</p>
-            </div>
-            <div>
-                <h5>Jane Smith</h5>
-                <p>He is a great student. He solved all the frontend projects.</p>
-            </div>
-            <div>
-                <h5>Emily Johnson</h5>
-                <p>He is a great student. He solved all the frontend projects.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2023 My Website</p>
+            </section>
+            <section class="reviews">
+                <h3>Reviews from my Teachers</h3>
+                <div class="reviewCollection">
+
+                    <div class="review">
+                        <p>He is a great student. He solved all the frontend projects.</p>
+                        <h5>John Doe</h5>
+                        <h5>Assistant Professor</h5>
+                    </div>
+                    <div class="review">
+                        <p>He is a great student. He solved all the frontend projects.</p>
+                        <h5>Jane Smith</h5>
+                        <h5>Assistant Professor</h5>
+                    </div>
+                    <div class="review">
+                        <p>He is a great student. He solved all the frontend projects.</p>
+                        <h5>Emily Johnson</h5>
+                        <h5>Assistant Professor</h5>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2023 My Website</p>
+        </footer>
+    </div>
 </body>
 
 </html>

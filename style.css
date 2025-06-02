@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    margin: 20px auto;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        "projects work education"
+        "projects opensourcework education"
+        "reviews reviews reviews"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section {
+    background-color: white;
+    margin-left: 10px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+    grid-area: projects;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.projects .projects-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 10px
+}
+
+.projects a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.projects h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.workexperience {
+    grid-area: work;
+    display: grid;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.workexperience h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.workexperience ul {
+    list-style: none;
+}
+
+.opensource {
+    grid-area: opensourcework;
+    display: grid;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.opensource h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.education {
+    grid-area: education;
+    display: grid;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.education h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.education p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.education ul {
+    list-style-type: disclosure-closed;
+    padding-left: 20px;
+}
+
+.reviews {
+    grid-area: reviews;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.reviews h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+
+.reviews .reviewCollection {
+    display: flex;
+    flex-direction: rows;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;}
+
+.reviews .review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "projects"
+        "reviews"
+        "footer";
+    gap: 20px;
+    padding: 10px;
+}
+
+.grid-container>* {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container nav {
+    grid-area: nav;
+}
+
+.grid-container header {
+    grid-area: header;
+}
+
+.grid-container .projects {
+    grid-area: projects;
+}
+
+.grid-container .work {
+    grid-area: work;
+}
+
+.grid-container .education {
+    grid-area: education;
+}
+
+.grid-container .reviews {
+    grid-area: reviews;
+}
+
+.grid-container footer {
+    grid-area: footer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
