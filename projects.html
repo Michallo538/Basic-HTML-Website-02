@@ -9,17 +9,20 @@
     <meta name="keywords" content="HTML, Projects, Frontend Developer, Portfolio">
     <meta name="author" content="Your Name">
     <link rel="icon" href="https://via.placeholder.com/32" type="image/png">
-    
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <nav>
-        <div>
-            <div>
-                <img src="https://via.placeholder.com/150" alt="Logo" />
-                <h4>My Website</h4>
+    <div class="grid-container">
+        <nav>
+            <div class="logo">
+                <a class="alogo" href="/index.html">
+                    <img src="https://via.placeholder.com/150" alt="Logo" />
+                    <h4>My Website</h4>
+                </a>
             </div>
-            <div>
+            <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -27,27 +30,41 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <header>
-        <h1>Frontend Developer</h1>
-        <p>html only with proper layout, no styling</p>
-    </header>
-    <h1>My Projects</h1>
-    <ul>
-        <li>
-            <div>Portfolio Website</div>
-            <p>A personal website to showcase my work and skills.</p>
-        </li>
-        <li>
-            <div>Task Manager App</div>
-            <p>A simple web app to manage daily tasks and to-dos.</p>
-        </li>
-        <li>
-            <div>Weather Dashboard</div>
-            <p>Displays current weather information for any city.</p>
-        </li>
-    </ul>
+        </nav>
+
+        <header>
+            <h1>Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </header>
+        <main class="main-projects">
+            <h1>My Projects</h1>
+            <ul>
+                <li>
+                    <h3> Portfolio Website </h3>
+                    <p>A personal website to showcase my work and skills.</p>
+                </li>
+                <li>
+                    <h3> Github project </h3>
+                    <p>A personal website to showcase my work and skills.</p>
+                </li>
+                <li>
+                    <h3> Calculator App </h3>
+                    <p>A personal website to showcase my work and skills.</p>
+                </li>
+                <li>
+                    <h3>Task Manager App</h3>
+                    <p>A simple web app to manage daily tasks and to-dos.</p>
+                </li>
+                <li>
+                    <h3>Weather Dashboard</h3>
+                    <p>Displays current weather information for any city.</p>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 
 </html>

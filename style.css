@@ -17,6 +17,12 @@ nav {
     justify-content: space-between;
 }
 
+.alogo {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -24,6 +30,7 @@ nav {
     align-items: center;
 
 }
+
 
 .logo img {
     height: 40px;
@@ -72,7 +79,7 @@ header p {
     font-size: 18px;
 }
 
-main {
+.main-content {
     margin: 20px auto;
     background-color: white;
     display: grid;
@@ -133,6 +140,16 @@ section {
     margin-bottom: 10px;
 }
 
+.workexperience h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.workexperience p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 .workexperience ul {
     list-style: none;
 }
@@ -185,11 +202,11 @@ section {
 
 .reviews .reviewCollection {
     display: flex;
-    flex-direction: rows;
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 .reviews .review {
     background-color: #f9f9f9;
@@ -197,6 +214,41 @@ section {
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.main-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.main-projects h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.main-projects ul {
+    margin: 5px
+}
+
+.main-projects li {
+    list-style: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .grid-container {
@@ -219,6 +271,14 @@ section {
 
 .grid-container nav {
     grid-area: nav;
+}
+
+.grid-container logo {
+    grid-area: logo;
+}
+
+.grid-container .nav-links {
+    grid-area: nav-links;
 }
 
 .grid-container header {
@@ -245,12 +305,148 @@ section {
     grid-area: footer;
 }
 
-footer {
-    text-align: center;
+.main-articles {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    border-radius: 8px;
+}
+
+.main-articles article {
+    flex: 1;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.main-articles article h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.main-articles article p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.main-articles article button {
     background-color: #333;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+.container-form h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-areas:
+            "logo"
+            "nav-links"
+            "header"
+            "projects"
+            "work"
+            "education"
+            "opensourcework"
+            "reviews";
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    ;
+
+    .main-projects h1 {
+        font-size: 30px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        margin-bottom: 10px;
+    }
+
+    .projects,
+    .workexperience,
+    .education,
+    .opensource {
+        margin: 10px;
+    }
+
+    .grid-container nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .nav-links ul {
+        align-items: center;
+    }
+
+    main ul {
+        padding-left: 0;
+    }
 }
