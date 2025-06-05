@@ -28,6 +28,8 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="articles.html">Articles</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <button class="dark-mode-toggle" onclick="myFunction()">Toggle Dark Mode</button>
+
                 </ul>
             </div>
         </nav>
@@ -95,5 +97,11 @@
         </footer>
     </div>
 </body>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 
 </html>
